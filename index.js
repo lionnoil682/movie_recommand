@@ -194,7 +194,6 @@ app.post('/user-based', (req, res) => {
 
     let responseData = '';
 
-    // 파이썬 스크립트로 JSON 데이터를 전달
     result.stdin.write(JSON.stringify(inputRatingDict));
     result.stdin.end(); // 더 이상 데이터가 없으면 전달 끝
 
